@@ -1,0 +1,32 @@
+/* Basic responsive layout for SQL-to-Pandas app */
+.app-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+@media (min-width: 1024px) {
+  .app-grid {
+    grid-template-columns: 420px 1fr;
+    align-items: start;
+  }
+  .left-col { position: sticky; top: 16px }
+}
+
+.left-col { display: flex; flex-direction: column; gap: 12px }
+.right-col { display: block }
+
+/* Accessibility and focus styles */
+button:focus, textarea:focus { outline: 2px solid #005fcc }
+
+/* Ensure no horizontal scrollbar for typical widths */
+html, body, #root { max-width: 100%; overflow-x: hidden }
+/* Responsive layout styles — expanded in Task 16 */
+
+/* Placeholder — full implementation in Task 16.1 */
+.app {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem;
+}

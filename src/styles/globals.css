@@ -1,0 +1,18 @@
+/* Global styles — expanded in Task 16 */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color-scheme: light dark;
+}
+
+/* Ensure code blocks use monospace at 14px minimum (design requirement) */
+code,
+pre {
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  font-size: 0.875rem; /* 14px */
+}
